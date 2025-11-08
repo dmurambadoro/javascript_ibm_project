@@ -54,24 +54,24 @@ let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticate
 console.log("Authentication Status:", authenticationStatus);
 
 //IBM JavaScript practice: Ternary operator for authentication
-let userRole = "employee";
-let accessLevel;
+let userCategory = "employee";
+let accessTier;
 
-switch (userRole) {
-	case "employee": accessLevel = "Full Access";
+switch (userCategory) {
+	case "employee": accessTier = "Full Access";
         console.log("Welcome to the all you can eat lunch!");
 	    break;
 	case "enrolledMember": 
-		accessLevel = "Full Access and One-on-one Interaction with DS";
+		accessTier = "Full Access and One-on-one Interaction with DS";
         console.log("Please dietician if you are not sure what to eat");
 		break;
 	case "subscriber":
-		accessLevel = "Partial Access";
+		accessTier = "Partial Access";
         console.log("You may have snacks and water only");
 		break;
 	case "non-subscriber":
-		accessLevel = "Please subscribe and enroll for dietary services";
+		accessTier = "Please subscribe and enroll for dietary services";
 		break;
 	default:
-		accessLevel = "Are you an alien? Do you even eat our kind of food?"
+		accessTier = "Are you an alien? Do you even eat our kind of food?"
 }
